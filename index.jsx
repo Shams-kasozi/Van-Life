@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './pages/home';
 import About from './pages/about';
+import Vans from './pages/vans';
 
 /**
  * Challenge:
@@ -27,11 +28,13 @@ function App() {
         <Link className='site-logo' to="/">#MyVanLife</Link>
         <nav>
           <Link to='/'>Home</Link>
+          <Link to='/vans'>Vans</Link>
           <Link to='/about'>About</Link>
         </nav>
       </header>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home/>}/>
+        <Route path='/vans' element={<Vans />} />
         <Route path='/about' element={<About />}/>
       </Routes>
     </BrowserRouter>

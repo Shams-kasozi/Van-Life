@@ -24,7 +24,7 @@ function App() {
   return (
     <BrowserRouter>
       <header>
-        <Link to="/">MyVanLife</Link>
+        <Link className='site-logo' to="/">#MyVanLife</Link>
         <nav>
           <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>

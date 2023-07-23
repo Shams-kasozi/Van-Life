@@ -1,6 +1,4 @@
-
-
- import React from "react"
+import React from "react"
 
 /**
  * {
@@ -21,6 +19,8 @@ export default function Vans() {
             .then(res => res.json())
             .then(data => setVans(data.vans))
     }, [])
+
+    console.log(vans)
 
     const vanElements = vans.map(van => (
         <div key={van.id} className="van-tile">

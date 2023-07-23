@@ -1,14 +1,8 @@
 import React from "react"
 
 /**
- * {
-    * id: "1", 
-    * name: "Modest Explorer", 
-    * price: 60, 
-    * description: "The Modest Explorer is a van designed to get you out of the house and into nature. This beauty is equipped with solar panels, a composting toilet, a water tank and kitchenette. The idea is that you can pack up your home and escape for a weekend or even longer!", 
-    * imageUrl: "https://assets.scrimba.com/advanced-react/react-router/modest-explorer.png", 
-    * type: "simple"
- * }
+ * Challenge: Wrap the contents of the "van-tile" div in a 
+ * Link that sends the user to `/vans/${van-id-here}`.
  */
 
 
@@ -19,8 +13,6 @@ export default function Vans() {
             .then(res => res.json())
             .then(data => setVans(data.vans))
     }, [])
-
-    console.log(vans)
 
     const vanElements = vans.map(van => (
         <div key={van.id} className="van-tile">

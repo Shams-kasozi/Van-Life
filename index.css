@@ -5,35 +5,30 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #cddee9;
+    background-color: #FFF7ED;
     font-family: "Inter", sans-serif;
 }
 
-nav > a {
-    text-decoration: none;
+body::-webkit-scrollbar {
+  display: none;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-  }
-
 body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}  
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 header {
-    height: 90px;
+    height: 110px;
     display: flex;
     align-items: center;
     padding-block: 10px;
-   
-}  
+}
 
 header .site-logo {
     color: black;
     margin-right: auto;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     font-weight: 900;
     font-size: 25px;
 }
@@ -46,9 +41,8 @@ header a {
 }
 
 header a:hover {
-    color: #0c4a97;
-    transform: translate(1px, 1px);
-
+    color: #161616;
+    text-decoration: underline;
 }
 
 .link-button {
@@ -68,15 +62,15 @@ header a:hover {
     transform: translate(1px, 1px);
 }
 
+/*** HOME PAGE ***/
 .home-container {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url("./assets/images/home-hero.png") no-repeat center center;
-    background-image: url("../assets/van.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     min-height: 350px;
-    color: rgb(16, 15, 15);
+    color: white;
     padding: 45px 23px;
 }
 
@@ -94,7 +88,7 @@ header a:hover {
     display: inline-block;
     text-align: center;
     text-decoration: none;
-    background-color: #54a6f2e3;
+    background-color: #FF8C38;
     border: none;
     width: 100%;
     margin-top: 27px;
@@ -110,6 +104,8 @@ header a:hover {
     transform: translate(1px, 1px);
 }
 
+
+/*** ABOUT PAGE ***/
 .about-hero-image {
     max-width: 100%;
 }
@@ -129,7 +125,7 @@ header a:hover {
 }
 
 .about-page-cta {
-    background-color: #54a6f2e3;
+    background-color: #FFCC8D;
     color: #161616;
     padding-inline: 32px;
     padding-bottom: 32px;
@@ -147,6 +143,7 @@ header a:hover {
     color: white;
     border-radius: 10px;
 }
+
 
 /*** VAN PAGES ***/
 .van-list-container {
